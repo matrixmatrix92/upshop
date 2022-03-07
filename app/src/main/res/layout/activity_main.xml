@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+<!--        First Layout-->
+        <LinearLayout
+            android:background="@color/grey1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_logo">
+
+            </ImageView>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end|center_vertical">
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText"
+            android:paddingLeft="10dp"
+            android:layout_width="fill_parent"
+            android:paddingRight="10dp"
+            android:hint="Search"
+            android:gravity="center_vertical"
+
+            android:background="@android:color/white"
+            android:layout_height="60dp"
+            android:inputType="textAutoComplete" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:layout_margin="3dp"
+            android:src="@drawable/img_search3" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_margin="3dp"
+            android:layout_width="@dimen/iconSize"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:layout_height="@dimen/iconSize"
+            android:layout_toLeftOf="@+id/imageButton1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_search2"/>
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="@dimen/iconSize"
+            android:layout_margin="3dp"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
+            android:layout_height="@dimen/iconSize"
+            android:layout_toLeftOf="@+id/imageButton2"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_search1"/>
+
+    </RelativeLayout>
+</LinearLayout>
+
+        </LinearLayout>
+
+<!--        Second Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/grey2"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="HEAD TIL 1"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="HEAD TIL 2"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="HEAD TIL 3"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="HEAD TIL 4">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/grey2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/img_shop"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:text="Best practice Definition &amp; Meaning"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="match_parent">
+                    
+                    <Button
+                        android:layout_width="130dp"
+                        android:background="#378ccb"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:gravity="center"
+                        android:text="SHOP"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                    
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="@color/grey1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerMainCategories"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:background="@color/grey2"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:text="#BEST TITLE"
+                android:layout_height="match_parent">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="700dp">
+            <GridView
+                android:id="@+id/grid_products"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:footerDividersEnabled="false"
+                android:horizontalSpacing="5dp"
+                android:background="@color/grey1"
+                android:numColumns="3"
+                android:padding="1dp"
+                android:verticalSpacing="5dp">
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:background="@color/grey2"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:text="#TOP TITLE"
+                android:layout_height="match_parent">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="@color/grey1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerProfiles"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:background="@color/grey2"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:text="#SHOP BY CATEGORY"
+                android:layout_height="match_parent">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="@color/grey1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerSubCategories"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="@color/grey1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerSubProducts"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/grey2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="TERM OF USE"
+                android:textColor="@color/grey3"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:text="CONTACT"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/grey3"
+                android:layout_height="match_parent">
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:text="CAREER"
+                android:layout_weight="1"
+                android:textColor="@color/grey3"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:text="AREA RANGE"
+                android:gravity="center"
+                android:textColor="@color/grey3"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/grey1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_logo">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical">
+                <TextView
+                    android:text="PROJECT BY EZENESS TECHNOLOGY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:background="@color/grey1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <ImageButton
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+               android:scaleType="fitCenter"
+            android:src="@drawable/img_cat"
+            android:layout_weight="1" >
+        </ImageButton>
+           <ImageButton          android:scaleType="fitCenter"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_weight="1"
+               android:src="@drawable/img_shop_small">
+                   </ImageButton>
+
+             <ImageButton               android:scaleType="fitCenter"
+                 android:src="@drawable/img_insta"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp"
+                         android:layout_weight="1" >
+                     </ImageButton>
+          <ImageButton
+              android:src="@drawable/img_location"         android:scaleType="fitCenter"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                      android:layout_weight="1" >
+                  </ImageButton>
+
+           <ImageButton
+               android:src="@drawable/img_star"                android:scaleType="fitCenter"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_weight="1" >
+                   </ImageButton>
+
+        </LinearLayout>
+
+                 <LinearLayout
+                           android:layout_marginTop="15dp"
+                           android:background="@color/grey1"
+                           android:layout_width="match_parent"
+                           android:orientation="horizontal"
+                           android:layout_height="100dp">
+
+                 </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

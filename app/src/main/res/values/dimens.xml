@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cat_size">100dp</dimen>
+    <dimen name="full_cat_width">105dp</dimen>
+    <dimen name="full_cat_height">150dp</dimen>
+    <dimen name="cat_txt_width">50dp</dimen>
+    <dimen name="full_sub_cat_width">200dp</dimen>
+    <dimen name="full_sub_cat_height">105dp</dimen>
+    <dimen name="iconSize">32dp</dimen>
+    <dimen name="prd_size">130dp</dimen>
+    <dimen name="full_prd_width">140dp</dimen>
+    <dimen name="full_prd_height">200dp</dimen>
+</resources>
